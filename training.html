@@ -274,6 +274,9 @@ footer {
                         <input class="form-control" id="text3" placeholder="phone" name="phone"  required>
                         
                     </div>
+		<div class="form-group" id="div4">
+                        <input class="form-control" id="text4" placeholder="background Change" name="backroundChange" data-toggle="tooltip" title="If you want to change the background type 'YES'">
+                    </div>
                     
                     <a href="#section1"><button type="button" name="post" class="btn btn-primary" id="btn1" onclick="myFunction()">Update</button></a>
                     <script>
@@ -284,6 +287,17 @@ footer {
                           document.getElementById("your_email").innerHTML=y;
                           var z=document.getElementById("text3").value;
                           document.getElementById("your_phone").innerHTML=z;
+                          var a=document.getElementById("text4").value;
+                          if(a=="YES")
+                          {
+                            document.getElementById("section1").style.backgroundImage="url('ht.jpg')";
+
+                          }
+                          else{
+                            document.getElementById("section1").style.backgroundImage="url('fe.jpg')";
+
+
+                          }
                         }
                         </script>
                         
